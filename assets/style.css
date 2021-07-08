@@ -97,11 +97,11 @@ header{
     color: black;
 }
 .button a:hover{
+    transition: 0.8s;
+    transform: translateY(-2px);
     background: var(--button-gradient-reverse-color);
     box-shadow: 5px 10px 18px #888888;
     
-    transition: 0.8s;
-    transform: translateY(-2px);
 }
 .circle{
     width: 350px;
