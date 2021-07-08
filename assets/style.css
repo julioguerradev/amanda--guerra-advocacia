@@ -13,6 +13,13 @@ body{
     background-color: rgb(90, 88, 88);
     font: 400 1rem 'DM Sans', sans-serif;;
 }
+/*_____________________________________Styling Variables_____________________________________*/
+:root{
+    /*Colors*/
+    --border-color: #A17800;
+    --button-gradient-color:-webkit-linear-gradient(left,  #f6e6b4 0%,#ed9017 100%);
+    --button-gradient-reverse-color:-webkit-linear-gradient(left,  #ed9017 0%,#f6e6b4 100%);
+}
 /*_____________________________________Styling Header_____________________________________*/
 header{
     background-color: #333333BB;
@@ -29,7 +36,7 @@ header{
     margin-right: 7rem;
 }
 .topnav a:hover{
-    background-color: #FFD700BB;
+    background-color: var(--border-color);
     color: black;
 }
 .logo{
@@ -37,21 +44,69 @@ header{
     margin-left: 7rem;
 }
 /*_____________________________________Styling Header_____________________________________*/
-main{
+.Home{
     background: url(./images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    height: 750px;
 }
-.container{
+.main-box{
     max-width: 1000px;
     background-color: #333333BB;
-    padding: 20px;
-    height: 800px;
-
+    padding: 16px;
+    height: 600px;
+    
     margin: auto;
     margin-top: 3rem;
-
+    
     border-radius: 15px;
-    border: 3px solid #FFD700BB; 
+    border: 3px solid var(--border-color); 
 }
+.text-box{
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 40px;
+    max-width: 500px;
+    
+    color: white;
+    text-align: justify;
+    transition: 2s;
+}
+.text-box h2, p{
+    padding-bottom: 10px;
+}
+.button a{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 34px;
+    
+    padding: 14px 16px;
+    border-radius: 15px;
+    
+    background: var(--button-gradient-color);
+    transition: 2s;
+}
+.button a:hover{
+    background: var(--button-gradient-reverse-color);
+}
+.circle{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    
+    margin-left: 37rem;
+    margin-top: 6rem;
+    
+    background: url(./images/female-lawyer.jpg);
+    background-position: 19rem;
+    background-size: cover;
+    transition: 0.8s;
+}
+
+
+
+
+
+
