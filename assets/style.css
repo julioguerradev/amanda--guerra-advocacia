@@ -1,0 +1,57 @@
+/*_____________________________________Styling All_____________________________________*/
+*{
+    margin: 0;
+    padding: 0;
+} 
+ul{
+    list-style: none;
+}  
+a{
+    text-decoration: none;
+}
+body{
+    background-color: rgb(90, 88, 88);
+    font: 400 1rem 'DM Sans', sans-serif;;
+}
+/*_____________________________________Styling Header_____________________________________*/
+header{
+    background-color: #333333BB;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+}
+.topnav a, .logo{
+    float: right;
+    color: white;
+    padding: 14px 16px;
+}
+.topnav{
+    margin-right: 7rem;
+}
+.topnav a:hover{
+    background-color: #FFD700BB;
+    color: black;
+}
+.logo{
+    float: left;
+    margin-left: 7rem;
+}
+/*_____________________________________Styling Header_____________________________________*/
+main{
+    background: url(./images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.container{
+    max-width: 1000px;
+    background-color: #333333BB;
+    padding: 20px;
+    height: 800px;
+
+    margin: auto;
+    margin-top: 3rem;
+
+    border-radius: 15px;
+    border: 3px solid #FFD700BB; 
+}
