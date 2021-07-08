@@ -43,6 +43,16 @@ header{
     float: left;
     margin-left: 7rem;
 }
+.logo span{
+    padding: 3px;
+    border-radius: 3px;
+    background: var(--button-gradient-color);
+    color: black;
+}
+.logo span:hover{
+    box-shadow: 5px 10px 18px #888888;
+    transform: translateY(-2px);
+}
 /*_____________________________________Styling Header_____________________________________*/
 .Home{
     background: url(./images/background1.jpg);
@@ -71,7 +81,6 @@ header{
     
     color: white;
     text-align: justify;
-    transition: 2s;
 }
 .text-box h2, p{
     padding-bottom: 10px;
@@ -85,10 +94,14 @@ header{
     border-radius: 15px;
     
     background: var(--button-gradient-color);
-    transition: 2s;
+    color: black;
 }
 .button a:hover{
     background: var(--button-gradient-reverse-color);
+    box-shadow: 5px 10px 18px #888888;
+
+    transition: 0.8s;
+    transform: translateY(-2px);
 }
 .circle{
     width: 350px;
@@ -102,7 +115,6 @@ header{
     background: url(./images/female-lawyer.jpg);
     background-position: 19rem;
     background-size: cover;
-    transition: 0.8s;
 }
 
 
