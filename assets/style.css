@@ -54,17 +54,17 @@ header{
     transform: translateY(-2px);
 }
 /*_____________________________________Styling Header_____________________________________*/
-.Home{
+#Home{
     background: url(./images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
     height: 750px;
 }
-.main-box{
+.main-box, .cards{
     max-width: 1000px;
     background-color: #333333BB;
-    padding: 16px;
     height: 600px;
     
     margin: auto;
@@ -75,7 +75,7 @@ header{
 }
 .text-box{
     position: absolute;
-    margin-top: 2rem;
+    margin-top: 8rem;
     margin-left: 40px;
     max-width: 500px;
     
@@ -86,9 +86,9 @@ header{
     padding-bottom: 10px;
 }
 .button a{
-    position: absolute;
-    margin-top: 550px;
-    margin-left: 34px;
+    float: left;
+    margin-top: 500px;
+    margin-left: 180px;
     
     padding: 14px 16px;
     border-radius: 15px;
@@ -99,7 +99,7 @@ header{
 .button a:hover{
     background: var(--button-gradient-reverse-color);
     box-shadow: 5px 10px 18px #888888;
-
+    
     transition: 0.8s;
     transform: translateY(-2px);
 }
@@ -116,8 +116,34 @@ header{
     background-position: 19rem;
     background-size: cover;
 }
+/*_____________________________________Styling About_____________________________________*/
+#about{
+    height: 400px;
+}
+.cards{
+    height: 300px;
+    padding: 16px;
+    text-align: center;
+}
+.card{
+    display: inline-block;
+    padding: 8px;
+    margin: 12px;
+    margin-top: 1rem;
+    
+    height: 250px;
+    width: 150px;
 
-
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+}
+/*_____________________________________Styling Test_____________________________________*/
+.test{
+    padding: 20px;
+    width: 90%;
+    height: 800px;
+    background-color: white;
+}
 
 
 
