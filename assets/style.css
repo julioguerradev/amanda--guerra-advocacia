@@ -43,15 +43,18 @@ header{
     float: left;
     margin-left: 7rem;
 }
-.logo span{
+.logo span,
+.contact-logo{
     padding: 3px;
     border-radius: 3px;
     background: var(--button-gradient-color);
     color: black;
 }
-.logo span:hover{
+.logo span:hover,
+.contact-logo:hover{
     box-shadow: 5px 10px 18px #888888;
     transform: translateY(-2px);
+    transition: 0.4s;
 }
 /*_____________________________________Styling Home_____________________________________*/
 #Home{
@@ -178,13 +181,105 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/*_____________________________________Styling Test_____________________________________*/
-.test{
-    padding: 20px;
-    width: 90%;
-    height: 800px;
-    background-color: white;
+/*_____________________________________Styling Ocupation_____________________________________*/
+#ocupation{
+    background: url(./images/background2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 750px;
 }
+.ocupation-circle{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    
+    display: inline-block;
+    
+    margin-top: 1rem;
+    margin-left: 15%;
+    background: #615e5ebb;
+}
+.ocupation-circle-down{
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+    
+    display: inline-block;
+    
+    margin-left: 36%;
+    background: #615e5ebb;
+}
+.ocupation-img{
+    width: 150px;
+    height: 150px;
+    
+    margin: auto;
+    margin-top: 25px;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    background: white;
+}
+/*_____________________________________Styling Contact Ocupation_____________________________________*/
+#contact{
+    background: #615e5e;
+    height: 400px;
+    border-top: 1px solid var(--border-color);
+}
+.card-contact{
+    display: inline-block;
+    padding: 8px;
+    margin-left: 30%;
+    margin-top: 10%;
+    
+    width: 450px;
+    
+    background: #3a3939bb;
+    box-shadow:20px 20px 50px;
+    border-radius: 2px;
+}
+.contact-img{
+    float: right;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    
+    margin: 10px;
+    margin-left: auto;
+    
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    
+    background: url(./images/contact-img.jpg);
+    background-repeat: no-repeat;
+}
+.contact-img:hover{
+    box-shadow: 3px 8px 10px #888888;
+    transform: translateY(-2px);
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#contact .card-contact span{
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/* .logo span{
+    padding: 3px;
+    border-radius: 3px;
+    background: var(--button-gradient-color);
+    color: black;
+}
+.logo span:hover{
+    box-shadow: 3px 8px 10px #888888;
+    transform: translateY(-2px);
+    transition: 0.4s;
+} */
 
 
 
