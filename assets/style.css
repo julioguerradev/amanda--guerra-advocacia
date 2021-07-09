@@ -14,6 +14,9 @@ body{
     font: 400 1rem 'DM Sans', sans-serif;;
 }
 /*_____________________________________Styling Variables_____________________________________*/
+html{
+    scroll-behavior: smooth;
+}
 :root{
     /*Colors*/
     --border-color: #A17800;
@@ -57,7 +60,7 @@ header{
     transition: 0.4s;
 }
 /*_____________________________________Styling Home_____________________________________*/
-#Home{
+#home{
     background: url(./images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
