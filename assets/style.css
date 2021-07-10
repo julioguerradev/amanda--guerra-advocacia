@@ -8,6 +8,7 @@ ul{
 }  
 a{
     text-decoration: none;
+    color: black;
 }
 body{
     background-color: rgb(90, 88, 88);
@@ -22,6 +23,9 @@ html{
     --border-color: #A17800;
     --button-gradient-color:-webkit-linear-gradient(left,  #f6e6b4 0%,#ed9017 100%);
     --button-gradient-reverse-color:-webkit-linear-gradient(left,  #ed9017 0%,#f6e6b4 100%);
+    /*Hover button*/
+    --box-shadow: 5px 10px 18px #000000;
+    --box-shadow-2: 5px 10px 18px #292929;
 }
 /*_____________________________________Styling Header_____________________________________*/
 header{
@@ -44,18 +48,16 @@ header{
 }
 .logo{
     float: left;
-    margin-left: 7rem;
+    margin-left: 6rem;
 }
-.logo span,
-.contact-logo{
+.logo span{
     padding: 3px;
     border-radius: 3px;
     background: var(--button-gradient-color);
     color: black;
 }
-.logo span:hover,
-.contact-logo:hover{
-    box-shadow: 5px 10px 18px #888888;
+#test:hover{
+    box-shadow: var(--box-shadow);
     transform: translateY(-2px);
     transition: 0.4s;
 }
@@ -147,7 +149,7 @@ header{
     background: #615e5ebb;
 }
 .card:hover{
-    transform: translateY(-8px);
+    transform: scale(1.06);
     cursor: pointer;
     transition: 0.4s;
     box-shadow: 5px 10px 18px #888888;
@@ -227,7 +229,7 @@ header{
     border-radius: 50%;
     background: white;
 }
-/*_____________________________________Styling Contact Ocupation_____________________________________*/
+/*_____________________________________Styling Contact_____________________________________*/
 #contact{
     background: #615e5e;
     height: 400px;
@@ -248,8 +250,8 @@ header{
 .contact-img{
     float: right;
     padding: 10px;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     
     margin: 10px;
     margin-left: auto;
@@ -259,30 +261,71 @@ header{
     
     background: url(./images/contact-img.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
 }
-.contact-img:hover{
-    box-shadow: 3px 8px 10px #888888;
+.contact-img:hover,
+.contact-logo:hover{
+    box-shadow: var(--box-shadow-2);
     transform: translateY(-2px);
     transition: 0.4s;
     cursor: pointer;
 }
 
-#contact .card-contact span{
-    display: inline-block;
-    margin-left: 10px;
-    margin-top: 5px;
-}
-/* .logo span{
+
+
+.contact-logo{
+    position: absolute;
     padding: 3px;
+    width: 150px;
+    text-align: center;
+
+
     border-radius: 3px;
     background: var(--button-gradient-color);
     color: black;
+
+    margin-left: 8rem;
+    margin-top: 1rem;
 }
-.logo span:hover{
-    box-shadow: 3px 8px 10px #888888;
+
+.contact-logo:hover{
+    box-shadow: var(--box-shadow);
     transform: translateY(-2px);
     transition: 0.4s;
-} */
+}
+.contact-content{
+    padding: 10px;
+    font-size: 0.8rem;
+
+    margin-top: 3rem;
+    margin-left: 6.5rem;
+}
+.icon-contact{
+    width: 1rem;
+}
+#balance-icon{
+    width: 5rem;
+    margin-left: 3rem;
+}
+#mail{
+    display: block;
+}
+#oab{
+    display: block;
+    margin-left: 0.8rem;
+}
+#phone{
+    display: block;
+    margin-left: 1.8rem;
+}
+
+
+
+
+
+
+
+
 
 
 
