@@ -245,7 +245,7 @@ header{
     
     background: #3a3939bb;
     box-shadow:20px 20px 50px;
-    border-radius: 2px;
+    border-radius: 5px;
 }
 .contact-img{
     float: right;
@@ -270,24 +270,20 @@ header{
     transition: 0.4s;
     cursor: pointer;
 }
-
-
-
 .contact-logo{
     position: absolute;
     padding: 3px;
     width: 150px;
     text-align: center;
-
-
+    
+    
     border-radius: 3px;
     background: var(--button-gradient-color);
     color: black;
-
+    
     margin-left: 8rem;
     margin-top: 1rem;
 }
-
 .contact-logo:hover{
     box-shadow: var(--box-shadow);
     transform: translateY(-2px);
@@ -296,12 +292,13 @@ header{
 .contact-content{
     padding: 10px;
     font-size: 0.8rem;
-
+    
     margin-top: 3rem;
     margin-left: 6.5rem;
 }
 .icon-contact{
     width: 1rem;
+    vertical-align: bottom;
 }
 #balance-icon{
     width: 5rem;
@@ -317,6 +314,81 @@ header{
 #phone{
     display: block;
     margin-left: 1.8rem;
+}
+#oab:hover,
+#mail:hover,
+#phone:hover{
+    color: var(--border-color);
+}
+/*_____________________________________Styling Footer_____________________________________*/
+.footer-container{
+    position: relative;
+    height: 100px;
+}
+#face,
+#insta,
+#twitter{
+    position: absolute;
+    width: 1.8rem;
+    height: 2rem;
+    
+    background: url(./images/icons/instagram-icon.png);
+    background-size: contain;
+    
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+#face{
+    background: url(./images/icons/fecebook-1-icon.png);
+    background-size: contain;
+    margin-left: 5.5rem;
+}
+#twitter{
+    background: url(./images/icons/twitter-icon.png);
+    background-size: contain;
+    margin-left: 7.7rem;
+}
+#face:hover,
+#insta:hover,
+#twitter:hover{
+    transition: 0.4s;
+    transform: translateY(-9px);
+    cursor: pointer;
+}
+
+#copy-right{
+    position: absolute;
+    font: 3rem;
+    margin-left: 40%;
+    margin-top: 2.5rem;
+}
+#created-by{
+    position: absolute;
+    font: 3rem;
+    margin-left: 47%;
+    margin-top: 2.5rem; 
+}
+#copy-right:hover,
+#created-by a:hover{
+    color: var(--border-color)
+}
+#location{
+    position: absolute;
+    
+    margin-top: 3rem;
+    margin-left: 75%;
+}
+#location-icon{
+    position: absolute;
+    width: 1.8rem;
+    height: 2rem;
+    
+    background: url(./images/icons/location-icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+    margin-top: 1.2rem;
+    margin-left: 81%;
 }
 
 
